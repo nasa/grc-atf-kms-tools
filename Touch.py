@@ -9,7 +9,7 @@ global logMessages
 logMessages = ""
 
 def getArguments():
-    # accept fromWiki, toWiki, protect, page, and category from cl
+    # accept wiki and category from cl
     try:
         opts,args = getopt.getopt(sys.argv[1:],"c:w:",["cat=","wiki="])
     except getopt.GetoptError:
